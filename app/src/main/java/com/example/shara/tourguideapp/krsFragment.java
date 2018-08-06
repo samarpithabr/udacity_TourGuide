@@ -31,8 +31,6 @@ public class krsFragment extends Fragment {
     }
 
 
-
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,9 +42,9 @@ public class krsFragment extends Fragment {
         arraylist.add(new Tour(R.drawable.rangan, getString(R.string.rangan), getString(R.string.rangand)));
         arraylist.add(new Tour(R.drawable.brund, getString(R.string.bru), getString(R.string.brund)));
         arraylist.add(new Tour(R.drawable.bluff, getString(R.string.gagan), getString(R.string.bird)));
-        
-        TourAdapter adapter = new TourAdapter(rootView.getContext(),arraylist);
-        ListView listview =  rootView.findViewById(R.id.Krs_list);
+
+        TourAdapter adapter = new TourAdapter(getActivity(), arraylist);
+        ListView listview = rootView.findViewById(R.id.Krs_list);
         listview.setAdapter(adapter);
         return rootView;
 

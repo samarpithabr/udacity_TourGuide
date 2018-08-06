@@ -21,11 +21,9 @@ public class TourAdapter extends ArrayAdapter<Tour> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
-        if (convertView == null) {
-
-            LayoutInflater inflater = (LayoutInflater) LayoutInflater
-                    .from(getContext());
-            convertView = inflater.inflate(R.layout.list, parent, false);
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from(getContext()).inflate(
+                    R.layout.list, parent, false);
         }
         Tour currentmusic = getItem(position);
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_id);
@@ -35,8 +33,6 @@ public class TourAdapter extends ArrayAdapter<Tour> {
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.restaurant_name);
         nameTextView.setText(currentmusic.getRestName());
         return listItemView;
-
-
     }
 }
 

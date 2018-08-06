@@ -16,10 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".KrsActivity" />
-        <activity android:name=".AdichunchangiriActivity" />
-        <activity android:name=".SrirangapatnaActivity" />
-        <activity android:name=".BluffActivity"></activity>
     </application>
 
 </manifest>

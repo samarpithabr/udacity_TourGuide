@@ -37,7 +37,6 @@ public class SriFragment extends Fragment {
         arraylist.add(new Tour(R.drawable.surabi, getString(R.string.sura), getString(R.string.surad)));
         arraylist.add(new Tour(R.drawable.jyothi, getString(R.string.jyothi), getString(R.string.thim)));
         arraylist.add(new Tour(R.drawable.thimdas, getString(R.string.thimms), getString(R.string.jyod)));
-
         TourAdapter adapter = new TourAdapter(rootView.getContext(), arraylist);
         ListView listview = (ListView) rootView.findViewById(R.id.sri_list);
         listview.setAdapter(adapter);

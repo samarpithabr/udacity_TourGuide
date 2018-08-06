@@ -18,7 +18,6 @@ public class Tour {
         return imageid;
     }
 
-
     public String getEventName() {
         return eventName;
     }
